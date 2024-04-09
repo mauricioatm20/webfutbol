@@ -1,0 +1,10 @@
+<!-- En tu plantilla equipo_detalle.html -->
+<h2>{{ equipo.team }}</h2>
+<p>País: {{ equipo.country }}</p>
+<p>Ciudad: {{ equipo.city }}</p>
+<h3>Jugadores:</h3>
+<ul>
+    {% for jugador in jugadores %}
+    <li>{{ jugador.name }} {{ jugador.last_name }}</li>
+    {% endfor %}
+</ul>

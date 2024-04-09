@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Equipos</title>
+    <link rel="stylesheet" href="{% static 'estilos/head.css' %}">
+</head>
+<body>
+    <h1 class="titulo">Lista de Equipos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre del Equipo</th>
+                <th>País</th>
+                <th>Ciudad</th>
+                <th>Puntos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for team in equipo_list %}
+                <tr>
+                    <!-- Enlace al detalle del equipo -->
+                    <td><a href="{% url 'equipo_detalle' equipo_id=team.pk %}" target="_blank">{{ team.team }}</a></td>
+                    <td>{{ team.country }}</td>
+                    <td>{{ team.city }}</td>
+                    <td>{{ team.points }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
