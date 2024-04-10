@@ -24,4 +24,4 @@ class PartidoResultado(models.Model):
 class puntos_equipo(models.Model):
     jornada = models.PositiveIntegerField(verbose_name='Jornada')
     puntos= models.PositiveIntegerField(verbose_name='Puntos')
-    id_team = models.ForeignKey(Teams, on_delete=models.CASCADE)
+    team = models.ForeignKey(Teams, on_delete=models.CASCADE)

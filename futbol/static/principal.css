@@ -1,0 +1,18 @@
+.fondo {
+    background: white url("img/UEFA-Champions-League.jpg");
+    background-size: cover;
+}
+.titulo{
+    padding: 100px;
+    font-size: 50px;
+    font-family: "Impact";
+    color: aliceblue;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: aliceblue
+
+}

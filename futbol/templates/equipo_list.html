@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Equipos</title>
-    <link rel="stylesheet" href="{% static 'estilos/head.css' %}">
+    <link rel="stylesheet" href="{% static 'principal.css' %}">
 </head>
-<body>
+<body class="fondo">
     <h1 class="titulo">Lista de Equipos</h1>
     <table>
         <thead>
-            <tr>
+            <tr class="columnas">
                 <th>Nombre del Equipo</th>
                 <th>País</th>
                 <th>Ciudad</th>
@@ -25,7 +25,7 @@
                     <td><a href="{% url 'equipo_detalle' equipo_id=team.pk %}" target="_blank">{{ team.team }}</a></td>
                     <td>{{ team.country }}</td>
                     <td>{{ team.city }}</td>
-                    <td>{{ team.points }}</td>
+                    <td>{{ team.total_points }}</td>
                 </tr>
             {% endfor %}
         </tbody>
