@@ -1,0 +1,19 @@
+h2 {
+    color: #4ac1f7;
+}
+.equipo-background {
+
+    width: 100%; /* Ancho completo del contenedor */
+    background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen en el contenedor */
+    /* Otros estilos según sea necesario */
+}
+.grafico{
+    display: inline-block; /* Ajustar al contenido */
+    padding: 100px; /* Espaciado interno para mejor aspecto */
+    margin-left: 100px; /* Ajusta el valor según sea necesario */
+}
+.graf{
+    width: 50%;
+    margin:0px auto; /* Ajusta el valor según sea necesario */
+}

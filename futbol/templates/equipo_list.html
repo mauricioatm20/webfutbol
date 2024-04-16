@@ -22,7 +22,7 @@
             {% for team in equipo_list %}
                 <tr>
                     <!-- Enlace al detalle del equipo -->
-                    <td><a href="{% url 'equipo_detalle' equipo_id=team.pk %}" target="_blank">{{ team.team }}</a></td>
+                    <td><a href="{% url 'equipo_detalle' nombre_equipo=team.team %}">{{ team.team }}</a></td>
                     <td>{{ team.country }}</td>
                     <td>{{ team.city }}</td>
                     <td>{{ team.total_points }}</td>

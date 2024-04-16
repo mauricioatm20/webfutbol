@@ -4,8 +4,9 @@ class Teams(models.Model):
     team = models.CharField(max_length=50)
     country = models.CharField(max_length=50)
     city = models.CharField(max_length=50)
-    logo = models.ImageField(upload_to="logos")
+    logo = models.CharField(max_length=50)
     total_points = models.IntegerField(default=0)  # Campo para almacenar los puntos
+    fondo = models.CharField(max_length=50)
 
 class Player(models.Model):
     team = models.ForeignKey(Teams, on_delete=models.CASCADE)
@@ -13,6 +14,7 @@ class Player(models.Model):
     last_name = models.CharField(max_length=100)
     age = models.IntegerField()
     position = models.CharField(max_length=100)
+    nationality = models.CharField(max_length=100)
 
 class PartidoResultado(models.Model):
     equipo_local = models.ForeignKey(Teams, on_delete=models.CASCADE, related_name='partidos_local', verbose_name='Equipo local')

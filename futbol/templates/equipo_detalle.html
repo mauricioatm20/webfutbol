@@ -1,16 +1,20 @@
-<!-- En tu plantilla equipo_detalle.html -->
+{% load static %}
+<link rel="stylesheet" href="{% static 'principal2.css' %}">
+
+<body class="equipo-background" style="background-image: url('/static/img/{{ equipo.fondo }}')">
+
 <h2>{{ equipo.nombre_equipo }}</h2>
-<img src="data:image/png;base64,{{ grafico_base64 }}" alt="Gráfico de rendimiento del equipo">
-<!-- Aquí puedes mostrar otros detalles del equipo, como la lista de jugadores -->
+    <div class="grafico">
+    <img class="graf" src="data:image/png;base64,{{ grafico_base64 }}" alt="Gráfico de rendimiento del equipo">
+    </div>
 
-
-
-<h2>{{ equipo.team }}</h2>
+<h2>{{ equipo.team }}</h2><!-- Aquí puedes mostrar otros detalles del equipo, como la lista de jugadores -->
 <p>País: {{ equipo.country }}</p>
 <p>Ciudad: {{ equipo.city }}</p>
 <h3>Jugadores:</h3>
 <ul>
     {% for jugador in jugadores %}
-    <li>{{ jugador.name }} {{ jugador.last_name }}</li>
+    <li>{{ jugador.name }} {{ jugador.last_name }} {{ jugador.age }} {{ jugador.position }} {{ jugador.nationality }}</li>
     {% endfor %}
 </ul>
+</body>

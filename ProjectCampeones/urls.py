@@ -18,7 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('futbol/', include('futbol.urls')),
+    path('', include('futbol.urls')),
     path('admin/', admin.site.urls),
+
 
 ]
