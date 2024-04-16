@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e49ed68-8a16-4fab-9214-dc682c52b1b8" name="Changes" comment="desarrolando vistas mas avanzadas">
-      <change afterPath="$PROJECT_DIR$/futbol/migrations/0002_rename_id_team_puntos_equipo_team.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/futbol/static/img/UEFA-Champions-League.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/futbol/static/principal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProjectCampeones.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectCampeones.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectCampeones/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectCampeones/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/futbol/Static/estilos/head.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/futbol/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/futbol/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectCampeones/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectCampeones/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/futbol/templates/equipo_detalle.html" beforeDir="false" afterPath="$PROJECT_DIR$/futbol/templates/equipo_detalle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/futbol/templates/equipo_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/futbol/templates/equipo_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/futbol/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/futbol/urls.py" afterDir="false" />
@@ -63,27 +56,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.ProjectCampeones.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "master",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "http.proxy",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.ProjectCampeones.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\sw\ProjectCampeones\futbol" />
@@ -161,7 +154,11 @@
       <workItem from="1712907565958" duration="5750000" />
       <workItem from="1712913542181" duration="2381000" />
       <workItem from="1712917633591" duration="9000" />
-      <workItem from="1712917754829" duration="4178000" />
+      <workItem from="1712917754829" duration="4597000" />
+      <workItem from="1713165148673" duration="381000" />
+      <workItem from="1713165873700" duration="1675000" />
+      <workItem from="1713167937520" duration="1447000" />
+      <workItem from="1713169426056" duration="7375000" />
     </task>
     <task id="LOCAL-00001" summary="emepzando web">
       <option name="closed" value="true" />
@@ -219,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712748025489</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="desarrolando vistas mas avanzadas">
+      <option name="closed" value="true" />
+      <created>1712921948852</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712921948852</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
