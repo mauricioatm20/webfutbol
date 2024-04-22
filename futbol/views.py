@@ -1,7 +1,7 @@
 
 from django.shortcuts import get_object_or_404, render
 from django.views.generic import ListView
-from futbol.models import Teams, puntos_equipo
+from futbol.models import Teams, puntos_equipo, Player
 import matplotlib.pyplot as plt
 from io import BytesIO
 import base64
@@ -28,16 +28,16 @@ class IndexView(ListView):
 
         # Generar el gráfico lineal
         plt.figure(figsize=(10, 6))
-        plt.plot(jornadas, puntos, marker='o', linestyle='-', color='blue')
-        plt.xlabel('Jornada', color='black', fontsize=25)
-        plt.ylabel('Puntos', color='black', fontsize=25)
-        plt.title('Rendimiento del equipo por jornada')
+        plt.plot(jornadas, puntos, marker='o', linestyle='-', color='red')
+        plt.xlabel('Jornada', color='white', fontsize=15)
+        plt.ylabel('Puntos', color='white', fontsize=15)
+        plt.title('Rendimiento del equipo por jornada',color='white', fontsize=15)
         plt.xticks(range(0, 9), color='red')
-        plt.yticks(range(0, 24), color='black')
+        plt.yticks(range(0, 10), color='white')
 
-        plt.grid(True, color='black',linewidth=1)
+        plt.grid(True, color='white',linewidth=1)
         plt.gca().patch.set_facecolor('none')  # Establecer el fondo del gráfico como transparente
-        plt.gcf().patch.set_alpha(1)
+        plt.gcf().patch.set_alpha(0)
 
         # Guardar el gráfico en un buffer
         buffer = BytesIO()
@@ -62,3 +62,15 @@ class IndexView(ListView):
         # Renderizar la plantilla con el gráfico
         return render(request, 'equipo_detalle.html',
                       {'equipo': equipo, 'jugadores': jugadores, 'grafico_base64': grafico_base64})
+
+    def jugadores_list(request, equipo_id):
+        # Obtener el equipo asociado a este conjunto de jugadores
+        equipo = get_object_or_404(Teams, pk=equipo_id)
+
+        # Recuperar todos los jugadores asociados a este equipo
+        jugadores = equipo.objects.filter(equipo=equipo)
+
+        # Renderizar la plantilla con la lista de jugadores
+        return render(request, 'jugadores_list.html', {'equipo': equipo, 'jugadores': jugadores})
+
+

@@ -1,19 +1,33 @@
-h2 {
-    color: #4ac1f7;
-}
 .equipo-background {
-
-    width: 100%; /* Ancho completo del contenedor */
     background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
-    background-position: center; /* Centrar la imagen en el contenedor */
-    /* Otros estilos según sea necesario */
+
 }
-.grafico{
-    display: inline-block; /* Ajustar al contenido */
-    padding: 100px; /* Espaciado interno para mejor aspecto */
-    margin-left: 100px; /* Ajusta el valor según sea necesario */
+h2 {
+    color: white;
 }
 .graf{
-    width: 50%;
-    margin:0px auto; /* Ajusta el valor según sea necesario */
+
+    width: 45%;
+    height: auto;
+    opacity: 0.9;
+    position: absolute; /* Posición absoluta para superponer una imagen sobre la otra */
+    top: 450px; /* Ajusta la posición vertical según sea necesario */
+    left: 930px; /* Ajusta la posición horizontal según sea necesario */
+    z-index: 1; /* Asegura que la imagen superpuesta esté sobre la imagen de fondo */
+    /* Ajusta el tamaño y otros estilos de la imagen superpuesta según sea necesario */
+
+}
+
+.list_jug{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.jugadores{
+    color: white;
+}
+.ciudad{
+    color: white;
+}
+.pais{
+    color: white;
 }
